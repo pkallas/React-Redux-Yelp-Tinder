@@ -62,3 +62,6 @@ build
 bundle.js
 dist
 style.css
+
+# yelp api keys
+yelp_api.js

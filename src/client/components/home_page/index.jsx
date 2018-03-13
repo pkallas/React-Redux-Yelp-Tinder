@@ -3,6 +3,16 @@ import Restaurant from '../restaurant';
 import RestaurantSelectButtons from '../restaurant_select_buttons';
 
 export default class HomePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      rejectedRestaurants: [],
+      acceptedRestaurants: [],
+      currentRestaurant: {},
+      restaurantsFromSearch: [],
+    };
+  }
+
   render() {
     return (
       <div>
@@ -12,3 +22,12 @@ export default class HomePage extends Component {
     );
   }
 }
+/*
+  HomePage's state
+  {
+    restaurantsSeenIds: [],
+    currentRestaurant: {},
+    restaurantsToBeSeen: [],
+    restaurantSelected: {}
+  }
+*/
